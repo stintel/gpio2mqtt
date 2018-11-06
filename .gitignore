@@ -1,0 +1,15 @@
+.kdev4
+_CPack_Packages/
+CMakeCache.txt
+CMakeCPackOptions.cmake
+CMakeFiles
+CMakeScripts
+CPackConfig.cmake
+CPackSourceConfig.cmake
+Makefile
+build/
+cmake_install.cmake
+conffiles
+config.h
+install_manifest.txt
+mqtt2gpiod

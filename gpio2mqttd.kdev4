@@ -1,0 +1,4 @@
+[Project]
+Name=gpio2mqttd
+Manager=KDevCMakeManager
+VersionControl=kdevgit
