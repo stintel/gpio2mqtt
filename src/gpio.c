@@ -132,7 +132,7 @@ int init_gpio()
     ctx.sigfd = make_signalfd();
     ctx.watch_falling = false;
 
-    gpiod_ctxless_event_loop(gpio_chip, gpio_line, false, "gpio2mqttd", &timeout, cb_poll, cb_event, &ctx);
+    gpiod_ctxless_event_monitor(gpio_chip, GPIOD_CTXLESS_EVENT_BOTH_EDGES, gpio_line, false, "gpio2mqttd", &timeout, cb_poll, cb_event, &ctx);
 
     return 0;
 }
