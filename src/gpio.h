@@ -18,7 +18,4 @@
  *
  */
 
-char *gpio_chip;
-int gpio_line;
-
-extern int init_gpio();
+extern int init_gpio(char* gpio_chip, int gpio_line);

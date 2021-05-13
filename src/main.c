@@ -122,8 +122,6 @@ int main(int argc, char **argv)
     }
 #endif
 
-    gpio_chip = chip;
-    gpio_line = line;
     mqtt_host = host;
     mqtt_port = port;
     mqtt_username = username;
@@ -134,7 +132,7 @@ int main(int argc, char **argv)
     mqtt_tls = tls;
 #endif
 
-    init_gpio();
+    init_gpio(chip, line);
 
     return 0;
 }

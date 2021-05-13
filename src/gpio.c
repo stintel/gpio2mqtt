@@ -124,7 +124,7 @@ static int make_signalfd(void)
     return sigfd;
 }
 
-int init_gpio()
+int init_gpio(char *gpio_chip, int gpio_line)
 {
     struct mon_ctx ctx;
     struct timespec timeout = { 1, 0 };
